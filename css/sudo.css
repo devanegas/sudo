@@ -1,0 +1,85 @@
+@font-face {
+    font-family: museo;
+    src: url("../css/fonts/Museo\ 300.otf");
+}
+
+body{
+    height: 100%;
+    margin: 0px;
+}
+
+main div{
+    display: block;
+    min-height: 900px;
+
+}
+header{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    overflow: hidden;
+}
+div.home{
+    background-image: url(../css/img/writing4.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+div#menu{
+    background-color: #003767;
+    overflow: hidden;
+    padding:10px;
+}
+
+div.navigation{
+    background-color: #F47B20;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    font-family: museo;
+
+}
+.navigation a{
+    display: inline-block;
+    padding: 11px 13px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    font-size: 18px;
+}
+
+.navigation a:hover{
+background-color: #FAA634;
+transition: 0.7s;
+}
+
+.navigation a.icon{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navigation a:not(:first-child) {display: none;}
+    .navigation a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+  @media screen and (max-width: 600px) {
+    .navigation.responsive {position: relative;}
+    .navigation.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navigation.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

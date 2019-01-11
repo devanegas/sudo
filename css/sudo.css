@@ -5,6 +5,7 @@
 
 html{
     scroll-behavior: smooth;
+
 }
 
 body{
@@ -108,7 +109,46 @@ transition: 0.7s;
     display: none;
 }
 
+.card-img-top{
+    opacity:.75;
+    border: 0px;
+    border-radius: 10px 10px 0 0;
+}
 
+.card-img-top:hover{
+    opacity:1;
+    transition: 0.7s;
+}
+
+.container .card.mb-3{
+    border-radius: 10px;
+    display: inline-flex;
+    flex: 2 1;
+    margin: 10px;
+}
+
+.card.mb-3:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.7s;
+    
+}
+
+.row{
+    width: 100%;
+    margin-left: 1px;
+}
+
+.card.text-secondary img{
+    height: 75px;
+    opacity: .75;
+}
+
+.container{
+    position: absolute;
+    top: 150px;
+    min-width: 100%;
+    font-family: museo;
+}
 @media screen and (max-width: 600px) {
     .navigation a:not(:first-child) {display: none;}
     .navigation a.icon {

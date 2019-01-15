@@ -13,6 +13,8 @@ body{
     size: 100%;
 }
 
+
+
 main div{
     display: block;
 
@@ -32,6 +34,7 @@ header{
     position: relative;
     top:7px;
     right: 15px;
+    margin: 0px 15px 0px;
 }
 /*Correction for the LOGO*/
 #logo{
@@ -54,7 +57,7 @@ header{
     background-color: #111;
     position: absolute;
     bottom: 50vh;
-    left: 40%;
+    left: 44%;
     text-align: center;
     color: #fff;
     padding: 18px;
@@ -149,6 +152,22 @@ transition: 0.7s;
     min-width: 100%;
     font-family: museo;
 }
+
+
+footer {
+    position: absolute;
+    font-family: museo;
+    font-size: 12px;
+    right: 0;
+    bottom: -15vh;
+    left: 0;
+    padding: 5px;
+    color: gray;
+    text-align: center;
+    background-color: #003767;
+  }
+
+
 @media screen and (max-width: 600px) {
     .navigation a:not(:first-child) {display: none;}
     .navigation a.icon {
